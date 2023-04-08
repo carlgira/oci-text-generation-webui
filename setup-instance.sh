@@ -31,8 +31,8 @@ User=$USER
 WantedBy=multi-user.target
 EOT
 
-mkdir -p $APP_DIR/repositories
 su -c "git clone https://github.com/oobabooga/text-generation-webui.git $APP_DIR" $USER
+mkdir -p $APP_DIR/repositories
 su -c "git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa $APP_DIR/repositories/GPTQ-for-LLaMa" $USER
 su -c "wget -O $APP_DIR/start.sh https://raw.githubusercontent.com/carlgira/oci-text-generation-webui/main/start.sh" $USER
 
