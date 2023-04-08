@@ -122,6 +122,7 @@ if [[ "$first_launch" -eq 1 ]]; then
     cd models
     git lfs install
     git clone https://huggingface.co/anon8231489123/vicuna-13b-GPTQ-4bit-128g
+    cd ..
 fi
 
 
@@ -129,6 +130,6 @@ fi
 export venv_bin_dir=$(dirname "$(command -v python)")
 
 printf "\n%s\n" "${delimiter}"
-printf "Launching app.py..."
+printf "Launching server.py..."
 printf "\n%s\n" "${delimiter}"
 "${python_cmd}" "${LAUNCH_SCRIPT}"
