@@ -15,7 +15,7 @@ fi
 # Name of the subdirectory
 if [[ -z "${clone_dir}" ]]
 then
-    clone_dir=" text-generation-webui"
+    clone_dir="text-generation-webui"
 fi
 
 # python3 executable
