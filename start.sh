@@ -132,4 +132,4 @@ export venv_bin_dir=$(dirname "$(command -v python)")
 printf "\n%s\n" "${delimiter}"
 printf "Launching server.py..."
 printf "\n%s\n" "${delimiter}"
-"${python_cmd}" "${LAUNCH_SCRIPT}"
+"${python_cmd}" "${LAUNCH_SCRIPT}" --wbits 4 --groupsize 128
