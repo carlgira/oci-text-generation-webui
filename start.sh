@@ -52,7 +52,7 @@ export PIP_IGNORE_INSTALLED=0
 delimiter="################################################################"
 
 printf "\n%s\n" "${delimiter}"
-printf "\e[1m\e[32mInstall script for dreambooth + Web UI\n"
+printf "\e[1m\e[32mInstall script for + Web UI\n"
 printf "\n%s\n" "${delimiter}"
 
 # Do not run as root
