@@ -32,7 +32,7 @@ WantedBy=multi-user.target
 EOT
 
 su -c "git clone https://github.com/oobabooga/text-generation-webui.git $APP_DIR" $USER
-su -c "wget -O $APP_DIR/start.sh https://github.com/carlgira/oci-text-generation-webui/app.py" $USER
+su -c "wget -O $APP_DIR/start.sh https://raw.githubusercontent.com/carlgira/oci-text-generation-webui/main/start.sh" $USER
 
 systemctl daemon-reload
 systemctl enable $APP

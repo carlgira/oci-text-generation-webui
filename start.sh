@@ -7,17 +7,15 @@ then
     export install_dir="$(eval echo ~$USER)"
 fi
 
-WORK_DIR=$install_dir/dreambooth
-
 if [[ -z "${LAUNCH_SCRIPT}" ]]
 then
-    LAUNCH_SCRIPT="app.py"
+    LAUNCH_SCRIPT="server.py"
 fi
 
 # Name of the subdirectory
 if [[ -z "${clone_dir}" ]]
 then
-    clone_dir="dreambooth-webui"
+    clone_dir=" text-generation-webui"
 fi
 
 # python3 executable
