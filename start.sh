@@ -118,7 +118,7 @@ fi
 if [[ "$first_launch" -eq 1 ]]; then
     "${python_cmd}" -m pip install --upgrade pip
     "${pip_cmd}" install -r requirements.txt
-    "${pip_cmd}" install texttable toml sentencepiece safetensors peft datasets accelerate transformers markdown psutil gradio
+    "${pip_cmd}" install texttable toml sentencepiece safetensors peft datasets accelerate transformers markdown psutil gradio auto_gptq
     "${pip_cmd}" install --extra-index-url https://download.pytorch.org/whl/cu118 torch==2.0.0+cu118 torchvision==0.15.1+cu118 torchaudio==2.0.0+cu118
 
 
